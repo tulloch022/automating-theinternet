@@ -26,5 +26,9 @@ test.describe('Add/Remove Elements', () => {
         // Verify the "Delete" button is visible
         const deleteButton = page.getByText('Delete');
         await expect(deleteButton).toBeVisible();
+
+        //Verify the "Delete" button removes the element
+        await deleteButton.click();
+        await expect(deleteButton).not.toBeVisible();
     })
 })
