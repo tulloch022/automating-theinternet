@@ -12,6 +12,9 @@ test.describe('Add/Remove Elements', () => {
         const link = page.getByText('Add/Remove Elements');
         await link.click()
 
+        // Verify the URL is correct
+        await expect(page).toHaveURL(/add_remove_elements/);
+
         // Verify the header of the Add/Remove Elements page is visible
         const header = page.getByRole('heading', {name: 'Add/Remove Elements'})
         await expect(header).toBeVisible();
