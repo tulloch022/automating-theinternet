@@ -6,10 +6,10 @@ test.beforeEach(async ({ page }) => {
   });
 
 
-test('File Upload link should navigate to file uploader page and receive uploaded file', async ({ page })=> {
+test('File Upload page should navigate correctly and process an uploaded file', async ({ page })=> {
     // Click the link to navigate to the file upload page
     const link = page.getByText("File Upload");
-    link.click()
+    await link.click()
 
     // Verify the URL, header, and that the file uploader components are there
     await expect(page).toHaveURL(/upload/);
@@ -23,7 +23,8 @@ test('File Upload link should navigate to file uploader page and receive uploade
     await expect(dragDrop).toBeVisible();
 
     // Select a file and click upload
-    await chooseFileButton.setInputFiles('automating-theinternet/tests/assets/file.txt')
+    const filePath = 'automating-theinternet/tests/assets/file.txt'
+    await chooseFileButton.setInputFiles(filePath)
     await uploadButton.click();
 
     // Verify correct file was uploaded
