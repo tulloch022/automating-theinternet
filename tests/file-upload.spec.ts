@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-
+import path from 'path'
 
 test.beforeEach(async ({ page }) => {
     await page.goto('https://the-internet.herokuapp.com/');
@@ -23,7 +23,7 @@ test('File Upload page should navigate correctly and process an uploaded file', 
     await expect(dragDrop).toBeVisible();
 
     // Select a file and click upload
-    const filePath = 'automating-theinternet/tests/assets/file.txt'
+    const filePath = path.resolve(__dirname, 'assets/file.txt')
     await chooseFileButton.setInputFiles(filePath)
     await uploadButton.click();
 
