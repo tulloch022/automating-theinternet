@@ -1,4 +1,4 @@
-# **The Internet - Test Suite**
+# **The Internet - Automated Test Suite**
 
 ### **Overview**
 This project demonstrates automated testing of [The Internet](https://the-internet.herokuapp.com/) using [Playwright](https://playwright.dev/). It focuses on building robust end-to-end tests for various features of the application, such as authentication, file uploads, dropdowns, and dynamic elements.
