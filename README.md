@@ -20,6 +20,7 @@ The following features have been implemented and are actively tested:
 9. **File Download**
 10. **Key Presses**
 11. **Inputs**
+12. **Floating Menu**
 
 Additional features, including edge cases and advanced scenarios, are planned as part of the ongoing project development.
 
