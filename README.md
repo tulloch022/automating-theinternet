@@ -36,7 +36,7 @@ The following features have been implemented and are actively tested:
 ### **How to Run the Tests**
 1. Clone the repository:
    ```bash
-   git clone https://github.com/tulloch022/automating_theinternet.git
+   git clone https://github.com/tulloch022/automating-theinternet.git
    ```
 2. Navigate to the project directory:
    ```bash
