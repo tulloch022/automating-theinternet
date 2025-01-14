@@ -3,8 +3,6 @@
 ### **Overview**
 This project demonstrates automated testing of [The Internet](https://the-internet.herokuapp.com/) using [Playwright](https://playwright.dev/). It focuses on building robust end-to-end tests for various features of the application, such as authentication, file uploads, dropdowns, and dynamic elements.
 
-This repository is a **work in progress**, serving as a hands-on portfolio project to showcase test automation skills and refine best practices.
-
 ---
 
 ### **Features Tested**
@@ -21,8 +19,10 @@ The following features have been implemented and are actively tested:
 10. **Key Presses**
 11. **Inputs**
 12. **Floating Menu**
+13. **Dynamic Loading**
+14. **Drag and Drop**
+15. **Notification Messages**
 
-Additional features, including edge cases and advanced scenarios, are planned as part of the ongoing project development.
 
 ---
 
@@ -50,9 +50,3 @@ Additional features, including edge cases and advanced scenarios, are planned as
    ```bash
    npx playwright test
    ```
-
----
-
-### **Next Steps**
-- Expanding test coverage (e.g., Sortable Tables, Frames, Dynamic Content).
-- Adding advanced reporting and test artifacts.
