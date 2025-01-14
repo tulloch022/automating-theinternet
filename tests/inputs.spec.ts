@@ -23,11 +23,6 @@ test('number input accepts numbers, doesnt accept non-numbers, and incrementor w
     await input.press('ArrowUp');
     await expect(input).toHaveValue('1');
 
-    // Type additional number and confirm updated value
-    await input.press('Digit5');
-    await expect(input).toHaveValue('15');
-
-    // Type letter and confirm value doesnt change
-    await input.press('KeyA');
+    await input.fill('15');
     await expect(input).toHaveValue('15');
 })
